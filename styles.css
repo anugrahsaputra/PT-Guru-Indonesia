@@ -11,31 +11,32 @@ body {
 header {
   background-color: #1E2A47;
   color: white;
-  padding: 20px 0;
+  padding: 10px 0; /* Sesuaikan padding untuk header */
   display: flex;
+  justify-content: center; /* Memastikan header berpusat */
   align-items: center;
-  justify-content: center;
+  width: 100%;
 }
 
 .header-content {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start; /* Menjaga logo di kiri */
   width: 100%;
   max-width: 1200px;
   padding: 0 20px;
 }
 
 .logo {
-  width: 50px; /* Sesuaikan ukuran logo */
+  width: 40px; /* Ukuran logo yang disesuaikan */
   height: auto;
   margin-right: 20px; /* Jarak antara logo dan nama PT */
 }
 
 .logo-text h1 {
   margin: 0;
-  font-size: 2.5em;
-  text-align: center;
+  font-size: 2.2em; /* Ukuran font nama PT yang disesuaikan */
+  text-align: left; /* Nama PT akan rata kiri setelah logo */
 }
 
 /* Foto Karyawan */
