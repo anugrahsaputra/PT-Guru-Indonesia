@@ -15,7 +15,7 @@ body {
   width: 20px;
   margin-left: 10px;
   vertical-align: middle;
-  filter: brightness(0) invert(1); /* Bikin icon putih */
+  filter: brightness(0) invert(1);
   transition: transform 0.2s;
 }
 
@@ -118,4 +118,48 @@ body {
 
 .nav.right {
   right: 10px;
+
+/* Responsiveness for smaller screens */
+@media (max-width: 768px) {
+  .logo img {
+    height: 40px;
+  }
+
+  .title h1 {
+    font-size: 16px;
+  }
+
+  .title p {
+    font-size: 10px;
+  }
+
+  .caption {
+    font-size: 18px;
+    bottom: 15px;
+    left: 20px;
+  }
+
+  .nav {
+    font-size: 20px;
+    padding: 6px;
+  }
+
+  /* Adjusting social media icons for smaller screens */
+  .social-icons img {
+    width: 18px;
+  }
+
+  /* Displaying the menu toggle on small screens */
+  .menu-toggle {
+    display: block;
+  }
+}
+
+/* Full width for slider captions on smaller screens */
+@media (max-width: 480px) {
+  .caption {
+    font-size: 16px;
+    bottom: 10px;
+    left: 15px;
+  }
 }
