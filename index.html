@@ -1,89 +1,88 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>PT GURU INDONESIA</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PT Guru Indonesia</title>
+  
+  <!-- Link untuk font Roboto dari Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-  <!-- Media Sosial -->
-  <div class="social-bar">
-    <div class="social-icons">
-      <a href="https://www.facebook.com/ptguruindonesia" target="_blank" title="Facebook PT GURU INDONESIA">
-        <img src="images/Facebook.png" alt="Facebook">
-      </a>
-      <a href="https://www.instagram.com/ptguruindonesia" target="_blank" title="Instagram PT GURU INDONESIA">
-        <img src="images/Instagram.png" alt="Instagram">
-      </a>
-      <a href="https://www.youtube.com/@ptguruindonesia" target="_blank" title="YouTube PT GURU INDONESIA">
-        <img src="images/Youtube.png" alt="YouTube">
-      </a>
-    </div>
-  </div>
-
-  <!-- Header -->
-  <header class="header">
-    <div class="top-bar">
-      <div class="logo">
-        <img src="images/logo.png" alt="Logo PT GURU INDONESIA">
-        <div class="title">
-          <h1>PT GURU INDONESIA</h1>
-          <p>The First Modern Paper Box Company in Indonesia</p>
-        </div>
-      </div>
-      <div class="menu-toggle">&#9776;</div>
+  <header>
+    <div class="logo">
+      <h1>PT Guru Indonesia</h1>
     </div>
   </header>
 
-  <!-- Slider -->
-  <div class="slider-container">
-    <div class="slider" id="slider">
-      <div class="slide">
-        <img src="images/slide1.jpg" alt="Slide 1">
-        <div class="caption">PT GURU INDONESIA</div>
-      </div>
-      <div class="slide">
-        <img src="images/slide2.jpg" alt="Slide 2">
-        <div class="caption">Modern Paper Box Company</div>
+  <!-- Slider Section -->
+  <section class="slider fade-in">
+    <div class="slider-item">
+      <img src="images/slider1.jpg" alt="Slide 1">
+    </div>
+    <div class="slider-item">
+      <img src="images/slider2.jpg" alt="Slide 2">
+    </div>
+    <div class="slider-item">
+      <img src="images/slider3.jpg" alt="Slide 3">
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about fade-in">
+    <div class="about-container">
+      <img src="images/karyawan.jpg" alt="Foto Karyawan" class="about-image">
+      <div class="about-text">
+        <h2>Tentang PT Guru Indonesia</h2>
+        <p>PT Guru Indonesia adalah perusahaan yang bergerak di bidang pendidikan dan pelatihan. Kami membantu sekolah dan guru meningkatkan kualitas pembelajaran melalui pelatihan, materi, dan solusi digital. Tujuan kami adalah mendukung pendidikan Indonesia menjadi lebih maju dan berkualitas.</p>
       </div>
     </div>
-    <button class="nav left" onclick="prevSlide()">&#10094;</button>
-    <button class="nav right" onclick="nextSlide()">&#10095;</button>
-  </div>
+  </section>
 
-  <!-- Produk -->
-  <section class="products">
+  <!-- Products Section -->
+  <section class="products fade-in">
     <h2>Produk Kami</h2>
-    <div class="product-grid">
-      <img src="images/product1.jpg" alt="Produk 1">
-      <img src="images/product2.jpg" alt="Produk 2">
-      <img src="images/product3.jpg" alt="Produk 3">
-      <img src="images/product4.jpg" alt="Produk 4">
+    <div class="product-container">
+      <div class="product-item">
+        <img src="images/product1.jpg" alt="Product 1">
+        <p>Produk 1</p>
+      </div>
+      <div class="product-item">
+        <img src="images/product2.jpg" alt="Product 2">
+        <p>Produk 2</p>
+      </div>
+      <div class="product-item">
+        <img src="images/product3.jpg" alt="Product 3">
+        <p>Produk 3</p>
+      </div>
+      <div class="product-item">
+        <img src="images/product4.jpg" alt="Product 4">
+        <p>Produk 4</p>
+      </div>
     </div>
-    <a class="more-products" href="#">See More Products</a>
   </section>
 
-  <!-- Foto Bersama -->
-  <section class="team-photo">
-    <img src="images/team.jpg" alt="Foto Bersama Karyawan">
-  </section>
-
-  <!-- Tentang PT -->
-  <section class="about">
-    <h2>Tentang PT GURU INDONESIA</h2>
-    <p>PT GURU INDONESIA adalah pelopor perusahaan modern dalam industri kardus di Indonesia. Kami berkomitmen pada kualitas, inovasi, dan kepuasan pelanggan.</p>
-  </section>
-
-  <!-- Kontak & Info -->
-  <footer class="footer">
-    <div class="contact-info">
-      <p><strong>Office & Factory:</strong> Jl. Contoh Alamat No. 123, Jakarta</p>
-      <p><strong>Telp/Fax:</strong> (021) 12345678</p>
-      <p><strong>WhatsApp:</strong> 0812-3456-7890</p>
-      <p><strong>Email:</strong> info@ptguruindonesia.co.id</p>
+  <!-- Contact Section -->
+  <section class="contact-info fade-in">
+    <div class="office">
+      <h3>Office & Factory</h3>
+      <p>Jl. Contoh No.123, Jakarta, Indonesia</p>
     </div>
+    <div class="contact-methods">
+      <h3>Hubungi Kami</h3>
+      <ul>
+        <li>Telp: +62 21 23456789</li>
+        <li>Fax: +62 21 23456788</li>
+        <li>Whatsapp: +62 8123456789</li>
+        <li>Email: info@theraa.com</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 PT Guru Indonesia. All rights reserved.</p>
   </footer>
 
   <script src="script.js"></script>

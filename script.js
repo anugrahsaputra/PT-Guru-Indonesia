@@ -1,27 +1,19 @@
-let slideIndex = 0;
-const slides = document.querySelectorAll(".slide");
-const slider = document.getElementById("slider");
-
-function showSlide(index) {
-  if (index >= slides.length) slideIndex = 0;
-  if (index < 0) slideIndex = slides.length - 1;
-  slider.style.transform = `translateX(-${slideIndex * 100}%)`;
+// Fungsi untuk menambahkan efek fade-in saat scroll
+function fadeInOnScroll() {
+  const elements = document.querySelectorAll('.fade-in');
+  
+  elements.forEach(element => {
+    const position = element.getBoundingClientRect().top;
+    const windowHeight = window.innerHeight;
+    
+    if (position < windowHeight - 100) {
+      element.classList.add('visible');
+    }
+  });
 }
 
-function nextSlide() {
-  slideIndex++;
-  showSlide(slideIndex);
-}
+// Menambahkan event listener untuk scroll
+window.addEventListener('scroll', fadeInOnScroll);
 
-function prevSlide() {
-  slideIndex--;
-  showSlide(slideIndex);
-}
-
-setInterval(() => {
-  nextSlide();
-}, 5000);
-
-document.querySelector(".menu-toggle").addEventListener("click", () => {
-  alert("Menu belum diatur. Tambahkan navigasi jika diperlukan.");
-});
+// Memastikan elemen-elemen fade-in muncul saat halaman dimuat
+document.addEventListener('DOMContentLoaded', fadeInOnScroll);
