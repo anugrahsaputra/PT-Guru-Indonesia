@@ -4,7 +4,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #f4f4f4;
-  color: #333333; /* Teks utama menggunakan abu-abu gelap */
+  color: #333333;
 }
 
 /* Header */
@@ -12,41 +12,41 @@ header {
   background-color: #1E2A47;
   color: white;
   padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 20px;
+}
+
+.logo {
+  width: 50px; /* Sesuaikan ukuran logo */
+  height: auto;
+  margin-right: 20px; /* Jarak antara logo dan nama PT */
+}
+
+.logo-text h1 {
+  margin: 0;
+  font-size: 2.5em;
   text-align: center;
 }
 
-header .logo h1 {
-  margin: 0;
-  font-size: 2.5em;
+/* Foto Karyawan */
+.employee-photo {
+  text-align: center;
+  margin: 40px 0;
 }
 
-/* Slider Styles */
-.slider {
-  display: flex;
-  overflow: hidden;
-  margin-bottom: 40px;
-}
-
-.slider-item {
-  min-width: 100%;
-  transition: transform 0.5s ease-in-out;
-}
-
-.slider-item img {
-  width: 100%;
+.employee-photo img {
+  width: 300px;
   border-radius: 8px;
-}
-
-/* Fade-in Effect */
-.fade-in {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 0.6s ease, transform 0.6s ease;
-}
-
-.fade-in.visible {
-  opacity: 1;
-  transform: translateY(0);
 }
 
 /* About Section */
@@ -54,11 +54,7 @@ header .logo h1 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-
-.about-container img {
-  width: 300px;
-  border-radius: 8px;
+  margin: 40px;
 }
 
 .about-text {
@@ -67,7 +63,7 @@ header .logo h1 {
 }
 
 .about h2 {
-  color: #1E2A47; /* Biru tua untuk judul */
+  color: #1E2A47;
   font-weight: 700;
 }
 
@@ -98,20 +94,6 @@ header .logo h1 {
 .product-item img {
   width: 100%;
   border-radius: 8px;
-}
-
-button {
-  background-color: #1E2A47;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-  border-radius: 5px;
-  margin-top: 20px;
-}
-
-button:hover {
-  background-color: #172441;
 }
 
 /* Kontak Section */
@@ -146,7 +128,7 @@ footer {
   color: white;
   text-align: center;
   padding: 10px 0;
-  position: fixed;
+  position: relative;
   bottom: 0;
   width: 100%;
 }
